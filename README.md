@@ -2,23 +2,40 @@
 Scripts que me han ayudado en el proceso de auditoria de un servidor Data marshall
 
 
-|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||Script para obtener información de los JOBs de SQL Server en varios servidores
+                                                                        ____    _____   __        
+                                                                        /\  _`\ /\  __`\/\ \
+                                                                        \ \,\L\_\ \ \/\ \ \ \
+                                                                        \/_\__ \\ \ \ \ \ \ \  __
+                                                                        /\ \L\ \ \ \\'\\ \ \L\ \
+                                                                        \ `\____\ \___\_\ \____/
+                                                                            \/_____/\/__//_/\/___/
+
+
+                                                                        ____    ____    ____    __  __  ____    ____
+                                                                        /\  _`\ /\  _`\ /\  _`\ /\ \/\ \/\  _`\ /\  _`\
+                                                                        \ \,\L\_\ \ \L\_\ \ \L\ \ \ \ \ \ \ \L\_\ \ \L\ \
+                                                                        \/_\__ \\ \  _\L\ \ ,  /\ \ \ \ \ \  _\L\ \ ,  /
+                                                                        /\ \L\ \ \ \L\ \ \ \\ \\ \ \_/ \ \ \L\ \ \ \\ \
+                                                                        \ `\____\ \____/\ \_\ \_\ `\___/\ \____/\ \_\ \_\
+                                                                            \/_____/\/___/  \/_/\/ /`\/__/  \/___/  \/_/\/ /
+
+                                            Script para obtener información de los JOBs de SQL Server en varios servidores
 
 
 Este script en Python permite obtener información de los JOBs (trabajos) programados en SQL Server en varios servidores y guardarla en un archivo de texto (.txt).
 
-|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||Requisitos
+Requisitos
 >>>>>>>>>>>>>>>>>>>>>>Python 3.x
 >>>>>>>>>>>>>>>>>>>>>>módulo pyodbc (para conectarse a SQL Server)
 
-|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||Uso
+Uso
 >>>>>>>>>>>>>>>>>>>>>>Descargar el archivo HistorialJobSQLServer.py en su equipo.
 
 >>>>>>>>>>>>>>>>>>>>>>Instalar el módulo pyodbc a través del siguiente comando:
 ----------------------pip install pyodbc
 >>>>>>>>>>>>>>>>>>>>>>Editar el archivo HistorialJobSQLServer.py y agregar la información de los servidores de SQL Server que desea consultar. Por ejemplo:
 
-|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||Conexiones a los server 
+Conexiones a los server 
 
 servers = [{'name': 'servidor1','host': 'localhost','port': '1433','database': 'mi_bd','user': 'mi_usuario','password': 'mi_contraseña'}, 
            {'name': 'servidor2','host': 'localhost','port': '1433','database': 'mi_bd','user': 'mi_usuario','password': 'mi_contraseña'}]
@@ -27,7 +44,7 @@ servers = [{'name': 'servidor1','host': 'localhost','port': '1433','database': '
 
 El script generará un archivo de texto llamado datos.csv en el mismo directorio donde se encuentra el archivo HistorialJobSQLServer.py. Este archivo contendrá la información de los 
 JOBs programados en los servidores de SQL Server especificados en el paso 3.
-|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||Notas
+||Notas
 
 Este script utiliza la librería pyodbc para conectarse a SQL Server. Asegúrese de tener instalado el controlador ODBC adecuado para SQL Server en su equipo.
 
