@@ -20,7 +20,7 @@ Scripts que me han ayudado en el proceso de auditoria de un servidor Data marsha
         \ `\____\ \____/\ \_\ \_\ `\___/\ \____/\ \_\ \_\
          \/_____/\/___/  \/_/\/ /`\/__/  \/___/  \/_/\/ /
 
-                                            Script para obtener información de los JOBs de SQL Server en varios servidores
+       Script para obtener información de los JOBs de SQL Server en varios servidores
 
 
 Este script en Python permite obtener información de los JOBs (trabajos) programados en SQL Server en varios servidores y guardarla en un archivo de texto (.txt).
